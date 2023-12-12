@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner tastiera = new Scanner(System.in);
 
-        int dec = 0, resto, conta = 0, num = 0,controllo=0;
+        int conta = 0, num = 0,controllo=0;
         System.out.println("Inserisci un byte in binario \n");
         String bin = tastiera.nextLine();
 
