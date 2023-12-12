@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class binario {
+public class Main {
     public static void main(String[] args) {
         Scanner tastiera = new Scanner(System.in);
 
-        int dec = 0, resto, conta = 0, num = 0;
+        int dec = 0, resto, conta = 0, num = 0,controllo=0;
         System.out.println("Inserisci un byte in binario \n");
         String bin = tastiera.nextLine();
 
@@ -14,8 +14,16 @@ public class binario {
             }
             conta++;
         }
+        for(int i = 0; i < bin.length(); i++) {
+            if (bin.charAt(i) == '1'||bin.charAt(i) == '0') {
 
-        if (conta < 8) {
+            }
+            else{
+                controllo++;
+            }
+        }
+            conta++;
+        if (conta < 8||controllo>0) {
             System.out.println("Il numero non è un byte");
         } else {
             System.out.println("E' un byte e vale " + num);
